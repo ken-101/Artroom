@@ -1,19 +1,63 @@
+h1, h2, h3, h4, h5, h6
+    margin: 0
+    
+    
 body
+    margin: 0
+    background-color: grey
     header
+        background-color: grey
         nav
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr
+            place-items: center
             .top-bar
+                font-size: 24px
+                text-decoration: none
+                color: white
                 .left
                 .center
                 .right
-        .frame-1 
+    main
+        .frame-1
         .banner
-            .banner-pic
+            img
+                width: 100%
+                height: 50rem
+                object-fit: cover
         .frame-2
-            .outer-slide-box
-                .slide-box
-                    .art
-                        .pic
+            height: auto
+            background-color: black
+            margin: 50px 20px
+            display: flex
+            justify-content: center
+            flex-direction: column
+
+            
+            .slide-box
+                display: flex
+                
+                flex-direction: column
+                padding: 50px 20px
+    
+                .art
+                    width: 100%
+                    position: relative
+                    display: flex
+                    justify-content: center
+                    
                     .title
-                    .copywrite
-                        .artist
-                        .description
+                        position: absolute
+                        font-size: 70px
+                        margin: 0
+                        bottom: 0px
+                        left: 5px
+                        color: white
+                        
+                    .pic
+                        width: 380px
+                        object-fit: contain
+                    .description
+                        
+    .font
+        color: white

@@ -53,7 +53,7 @@ body main .frame-2 .slide-box .art .title {
   color: white;
 }
 body main .frame-2 .slide-box .art .pic {
-  width: 380px;
+  width: 350px;
   -o-object-fit: contain;
      object-fit: contain;
 }

@@ -1,0 +1,90 @@
+
+h1, h2, h3, h4, h5, h6
+    margin: 0
+    
+@media (min-width:1025px)
+    body
+        margin: 0
+        background-color: grey
+        header
+            background-color: grey
+            nav
+                display: grid
+                grid-template-columns: 1fr 1fr 1fr
+                place-items: center
+                .top-bar
+                    font-size: 24px
+                    text-decoration: none
+                    color: white
+                    .left
+                    .center
+                    .right
+        main
+            overflow: hidden
+            .frame-1
+            .banner
+                img
+                    width: 100%
+                    height: 50rem
+                    object-fit: cover
+            .snaps-inline::-webkit-scrollbar
+                display: none
+            .frame-2
+                
+                height: auto
+                background-color: black
+                margin: 50px 20px
+                justify-content: center
+                flex-direction: row
+                width: auto
+                
+                
+                display: grid
+                grid-auto-flow: column
+                overflow-x: scroll
+                padding: 10px
+                
+                
+            .snaps-inline
+                scroll-snap-type: x mandatory
+                scroll-padding-inline: var(--_spacer, 1rem)
+                scroll-snap-align: center
+            
+                
+                .slide-box
+                    width: 80vw
+                    display: none
+                    display: grid
+                    grid-template-columns: 1fr 1fr
+                    padding: 50px 20px
+                    .art-template
+                        width: auto
+                        position: relative
+                        display: flex
+                        justify-content: left
+                        margin: 0 50px
+                        .art
+                            width: auto
+                            height: 500px
+                            position: relative
+                            display: flex
+                            justify-content: center
+                            
+                            .pic
+                                width: 500px
+                                object-fit: contain
+                            .title
+                                position: absolute
+                                font-size: 70px
+                                margin: 0
+                                bottom: 0
+                                left: 0
+                                color: white
+                            
+                    .details 
+                        display: flex
+                        align-items: center
+                        .description
+                            font-size: 2rem
+    .font
+        color: white

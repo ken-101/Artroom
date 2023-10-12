@@ -32,6 +32,7 @@ body
             display: flex
             justify-content: center
             flex-direction: column
+            border-radius: 10px
 
             
             .slide-box
@@ -39,25 +40,43 @@ body
                 
                 flex-direction: column
                 padding: 50px 20px
-    
-                .art
+                .art-template
                     width: 100%
                     position: relative
                     display: flex
                     justify-content: center
-                    
-                    .title
-                        position: absolute
-                        font-size: 70px
-                        margin: 0
-                        bottom: 0px
-                        left: 5px
-                        color: white
-                        
-                    .pic
+                    .art
                         width: 350px
-                        object-fit: contain
-                    .description
+                        position: relative
+                        display: flex
+                        justify-content: center
+                        .title
+                            position: absolute
+                            font-size: 70px
+                            margin: 0
+                            bottom: 0px
+                            left: 5px
+                            color: white
                         
-    .font
-        color: white
+                        .pic
+                            width: 350px
+                            object-fit: contain
+                            color: white
+                    .details
+                        
+                        .artist
+                            color: white   
+                        
+                        .description
+                            
+                        
+
+
+        .frame-3
+            height: 100vh
+            background-color: black
+            margin: 50px 20px
+            display: flex
+            justify-content: center
+            flex-direction: column
+            border-radius: 10px

@@ -1,3 +1,5 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
@@ -21,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
   }
   body main {
-    overflow: hidden;
+    position: relative;
   }
   body main .banner img {
     width: 100%;
@@ -29,66 +31,90 @@ h1, h2, h3, h4, h5, h6 {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  body main .snaps-inline::-webkit-scrollbar {
-    display: none;
-  }
   body main .frame-2 {
+    position: relative;
+  }
+  body main .frame-2 .text-artwork {
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: white;
+    padding: 10px 10px;
+    margin: 25px 20px 0 0;
+  }
+  body main .frame-2 .snaps-inline {
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--_spacer, 1rem);
+    overscroll-behavior-inline: contain;
+  }
+  body main .frame-2 .snaps-inline > * {
+    scroll-snap-align: center;
+  }
+  body main .frame-2 .artworks {
+    background-color: rgb(164, 247, 247);
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--size-3);
+    grid-auto-columns: auto;
+    overflow-x: auto;
+    padding: 100px 10px 10px 10px;
+    border-radius: 0 0 10px 10px;
+    margin: 0;
+    text-align: center;
+    overscroll-behavior-inline: contain;
     height: auto;
     background-color: black;
     margin: 50px 20px;
-    justify-content: center;
-    flex-direction: row;
-    width: auto;
-    display: grid;
-    grid-auto-flow: column;
-    overflow-x: scroll;
-    padding: 10px;
-  }
-  body main .snaps-inline {
-    scroll-snap-type: x mandatory;
-    scroll-padding-inline: var(--_spacer, 1rem);
     scroll-snap-align: center;
+    overflow-x: auto;
   }
-  body main .snaps-inline .slide-box {
-    width: 80vw;
-    display: none;
+  body main .frame-2 .artworks .slide-box {
+    align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 50px 20px;
   }
-  body main .snaps-inline .slide-box .art-template {
+  body main .frame-2 .artworks .slide-box .art-template {
     width: auto;
     position: relative;
     display: flex;
     justify-content: left;
     margin: 0 50px;
   }
-  body main .snaps-inline .slide-box .art-template .art {
-    width: auto;
-    height: 500px;
+  body main .frame-2 .artworks .slide-box .art-template .art {
+    width: 400px;
+    height: 400px;
     position: relative;
     display: flex;
     justify-content: center;
   }
-  body main .snaps-inline .slide-box .art-template .art .pic {
+  body main .frame-2 .artworks .slide-box .art-template .art .pic {
     width: 500px;
     -o-object-fit: contain;
        object-fit: contain;
   }
-  body main .snaps-inline .slide-box .art-template .art .title {
+  body main .frame-2 .artworks .slide-box .art-template .art .title {
     position: absolute;
     font-size: 70px;
     margin: 0;
     bottom: 0;
-    left: 0;
+    left: 20px;
     color: white;
   }
-  body main .snaps-inline .slide-box .details {
+  body main .frame-2 .artworks .slide-box .details {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    min-width: 300px;
   }
-  body main .snaps-inline .slide-box .details .description {
-    font-size: 2rem;
+  body main .frame-2 .artworks .slide-box .details .artist {
+    font-size: 20px;
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body main .frame-2 .artworks .slide-box .details .description {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 0;
   }
   .font {
     color: white;

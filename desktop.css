@@ -43,6 +43,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px 10px;
     margin: 25px 20px 0 0;
   }
+  body main .frame-2 .snaps-inline::-webkit-scrollbar {
+    display: none;
+  }
   body main .frame-2 .snaps-inline {
     scroll-snap-type: x mandatory;
     scroll-padding-inline: var(--_spacer, 1rem);
@@ -58,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
     gap: var(--size-3);
     grid-auto-columns: auto;
     overflow-x: auto;
-    padding: 100px 10px 10px 10px;
+    padding: 100px 50px 10px 10px;
     border-radius: 0 0 10px 10px;
     margin: 0;
     text-align: center;

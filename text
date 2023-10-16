@@ -1,0 +1,182 @@
+
+
+
+
+
+<div class="bio2-3 snaps-inline">
+                    <div><iframe class="vid-title" width="290" height="170"
+                        src="https://www.youtube.om/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+                        </iframe>tea
+                    </div>
+                    <div><iframe class="vid-title" width="290" height="170"
+                        src="https://www.youtube.om/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+                        </iframe>eat
+                    </div>
+                    <div><iframe class="vid-title" width="290" height="170"
+                        src="https://www.youtube.om/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+                        </iframe>tea
+                    </div>
+                    <div><iframe class="vid-title" width="290" height="170"
+                        src="https://www.youtube.om/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+                        </iframe>tea
+                    </div>
+                    <div><iframe class="vid-title"  width="290" height="170"
+                        src="https://www.youtube.om/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+                        </iframe>tae
+                    </div>
+                </div>
+
+
+.bio2-3{
+    background-color: rgb(164, 247, 247);
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--size-3);
+    grid-auto-columns: auto;
+    overflow-x: auto;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    margin: 0;
+    text-align: center;
+    overscroll-behavior-inline: contain ;}
+.snaps-inline {
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--_spacer, 1rem);} 
+.snaps-inline > * {
+    scroll-snap-align: center;}
+
+
+
+    .frame-2
+                background-color: rgb(164, 247, 247)
+                display: grid
+                grid-auto-flow: column
+                gap: var(--size-3)
+                grid-auto-columns: auto
+                overflow-x: auto
+                padding: 10px 10px 10px 10px
+                border-radius: 10px
+                margin: 0
+                text-align: center
+                overscroll-behavior-inline: contain 
+                height: auto
+                background-color: black
+                margin: 50px 20px
+                justify-content: center
+                padding: 500px
+                width: auto
+
+                
+                
+                overflow-x: auto
+                padding: 10px
+                
+                
+            .snaps-inline
+                scroll-snap-type: x mandatory
+                scroll-padding-inline: var(--_spacer, 1rem)
+                scroll-snap-align: center
+                overscroll-behavior-inline: contain
+            
+                
+                .slide-box
+                    align-items: center
+                    height: 700px
+                    width: 900px
+                    display: grid
+                    grid-template-columns: 1fr 1fr
+                    padding: 50px 20px
+                    .art-template
+                        width: 600px
+                        position: relative
+                        display: flex
+                        justify-content: left
+                        margin: 0 50px
+                        .art
+                            width: auto
+                            height: 500px
+                            position: relative
+                            display: flex
+                            justify-content: center
+                            
+                            .pic
+                                width: 500px
+                                object-fit: contain
+                            .title
+                                position: absolute
+                                font-size: 70px
+                                margin: 0
+                                bottom: 0
+                                left: 20px
+                                color: white
+
+                    .details 
+                        display: flex
+                        flex-direction: column
+                        .artist
+                            font-size: 20px
+                            margin: 10px 0
+                            font-family: Arial, Helvetica, sans-serif
+                    
+                        .description
+                            font-size: 17px
+                            font-family: Arial, Helvetica, sans-serif
+                            margin: 50px 0
+    .font
+        color: white
+
+
+
+
+        <div class="frame-2 snaps-inline">
+          <!--<div class="text-artwork"><h1>ARTWORKS</h1></div>-->
+          <div class="slide-box">
+              <div class="art-template">
+                  <div class="art">
+                      <img class="pic" src="images/Art 1.png" alt="">
+                      <h1 class="font title">HATS</h1>
+                  </div>
+              </div>
+              <div class="details">
+                  <h2 class="font artist">ARTIST: SHANDY</h2>
+                  <div class="font description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quidem possimus necessitatibus perspiciatis eum unde, fugiat beatae repellat facere quod. Obcaecati laudantium ut voluptate. Alias maiores ratione similique eius nostrum, quia, placeat vel pariatur officiis suscipit tempora obcaecati, eos dolores.</div>
+              </div>
+          </div>
+          <div class="slide-box">
+              <div class="art-template">
+                  <div class="art">
+                      <img class="pic" src="images/Art 1.png" alt="">
+                      <h1 class="font title">HATS</h1>
+                  </div>
+              </div>
+              <div class="details">
+                  <h2 class="font artist">ARTIST: SHANDY</h2>
+                  <div class="font description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime nobis dolorum fugiat quidem voluptatum officiis assumenda.</div>
+              </div>
+          </div>
+          <div class="slide-box">
+              <div class="art-template">
+                  <div class="art">
+                      <img class="pic" src="images/Art 1.png" alt="">
+                      <h1 class="font title">HATS</h1>
+                  </div>
+              </div>
+              <div class="details">
+                  <h2 class="font artist">ARTIST: SHANDY</h2>
+                  <div class="font description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime nobis dolorum fugiat quidem voluptatum officiis assumenda.</div>
+              </div>
+          </div>
+          <div class="slide-box">
+              <div class="art-template">
+                  <div class="art">
+                      <img class="pic" src="images/Art 1.png" alt="">
+                      <h1 class="font title">HATS</h1>
+                  </div>
+              </div>
+              <div class="details">
+                  <h2 class="font artist">ARTIST: SHANDY</h2>
+                  <div class="font description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime nobis dolorum fugiat quidem voluptatum officiis assumenda.</div>
+              </div>
+          </div>
+          
+      </div>

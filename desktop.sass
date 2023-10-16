@@ -1,7 +1,8 @@
 
 h1, h2, h3, h4, h5, h6
     margin: 0
-    
+@import "https://unpkg.com/open-props"
+@import "https://unpkg.com/open-props/normalize.min.css"   
 @media (min-width:1025px)
     body
         margin: 0
@@ -20,71 +21,98 @@ h1, h2, h3, h4, h5, h6
                     .center
                     .right
         main
-            overflow: hidden
+            position: relative
             .frame-1
             .banner
                 img
                     width: 100%
                     height: 50rem
                     object-fit: cover
-            .snaps-inline::-webkit-scrollbar
-                display: none
             .frame-2
-                
-                height: auto
-                background-color: black
-                margin: 50px 20px
-                justify-content: center
-                flex-direction: row
-                width: auto
-                
-                
-                display: grid
-                grid-auto-flow: column
-                overflow-x: scroll
-                padding: 10px
-                
-                
-            .snaps-inline
-                scroll-snap-type: x mandatory
-                scroll-padding-inline: var(--_spacer, 1rem)
-                scroll-snap-align: center
-            
-                
-                .slide-box
-                    width: 80vw
-                    display: none
+                position: relative
+                .text-artwork
+                    left: 0
+                    top: 0
+                    position: absolute
+                    background-color: white
+                    padding: 10px 10px
+                    margin: 25px 20px 0 0
+                .snaps-inline::-webkit-scrollbar
+                    //display: none
+                .snaps-inline
+                    scroll-snap-type: x mandatory
+                    scroll-padding-inline: var(--_spacer, 1rem)
+                    
+                    overscroll-behavior-inline: contain
+                .snaps-inline 
+                    & > * 
+                        scroll-snap-align: center 
+                .artworks
+                    background-color: rgb(164, 247, 247)
                     display: grid
-                    grid-template-columns: 1fr 1fr
-                    padding: 50px 20px
-                    .art-template
-                        width: auto
-                        position: relative
-                        display: flex
-                        justify-content: left
-                        margin: 0 50px
-                        .art
+                    grid-auto-flow: column
+                    gap: var(--size-3)
+                    grid-auto-columns: auto
+                    overflow-x: auto
+                    padding: 100px 10px 10px 10px
+                    border-radius:0 0 10px 10px
+                    margin: 0
+                    text-align: center
+                    overscroll-behavior-inline: contain 
+                    height: auto
+                    background-color: black
+                    margin: 50px 20px
+                    scroll-snap-align: center
+                    
+                    
+                    overflow-x: auto
+                    
+                    
+                
+                
+                    
+
+                    .slide-box
+                        align-items: center
+                        display: grid
+                        grid-template-columns: 1fr 1fr
+                        padding: 50px 20px
+                        .art-template
                             width: auto
-                            height: 500px
                             position: relative
                             display: flex
-                            justify-content: center
-                            
-                            .pic
-                                width: 500px
-                                object-fit: contain
-                            .title
-                                position: absolute
-                                font-size: 70px
-                                margin: 0
-                                bottom: 0
-                                left: 0
-                                color: white
-                            
-                    .details 
-                        display: flex
-                        align-items: center
-                        .description
-                            font-size: 2rem
+                            justify-content: left
+                            margin: 0 50px
+                            .art
+                                width: 400px
+                                height: 400px
+                                position: relative
+                                display: flex
+                                justify-content: center
+                                
+                                .pic
+                                    width: 500px
+                                    object-fit: contain
+                                .title
+                                    position: absolute
+                                    font-size: 70px
+                                    margin: 0
+                                    bottom: 0
+                                    left: 20px
+                                    color: white
+
+                        .details 
+                            display: flex
+                            flex-direction: column
+                            min-width: 300px
+                            .artist
+                                font-size: 20px
+                                margin: 10px 0
+                                font-family: Arial, Helvetica, sans-serif
+                        
+                            .description
+                                font-size: 17px
+                                font-family: Arial, Helvetica, sans-serif
+                                margin: 50px 0
     .font
         color: white

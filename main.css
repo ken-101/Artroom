@@ -1,79 +1,107 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-body {
-  margin: 0;
-  background-color: grey;
-}
-body header {
-  background-color: grey;
-}
-body header nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-items: center;
-}
-body header nav .top-bar {
-  font-size: 24px;
-  text-decoration: none;
-  color: white;
-}
-body main .banner img {
-  width: 100%;
-  height: 50rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-body main .frame-2 {
-  height: auto;
-  background-color: black;
-  margin: 50px 20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 10px;
-}
-body main .frame-2 .slide-box {
-  display: flex;
-  flex-direction: column;
-  padding: 50px 20px;
-}
-body main .frame-2 .slide-box .art-template {
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-body main .frame-2 .slide-box .art-template .art {
-  width: 350px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-body main .frame-2 .slide-box .art-template .art .title {
-  position: absolute;
-  font-size: 70px;
-  margin: 0;
-  bottom: 0px;
-  left: 5px;
-  color: white;
-}
-body main .frame-2 .slide-box .art-template .art .pic {
-  width: 350px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  color: white;
-}
-body main .frame-2 .slide-box .art-template .details .artist {
-  color: white;
-}
-body main .frame-3 {
-  height: 100vh;
-  background-color: black;
-  margin: 50px 20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 10px;
+@media (max-width: 1024px) {
+  body {
+    margin: 0;
+    background-color: grey;
+  }
+  body header {
+    background-color: grey;
+  }
+  body header nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+  body header nav .top-bar {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+  }
+  body main .banner img {
+    width: 100%;
+    height: 50rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main .frame-2 .text-artwork {
+    top: 0;
+    position: absolute;
+    background-color: white;
+    padding: 20px 20px;
+    margin: 50px 20px 0 20px;
+  }
+  body main .frame-2 .artworks {
+    position: relative;
+    height: auto;
+    background-color: black;
+    margin: 50px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 50px 0;
+  }
+  body main .frame-2 .artworks .text-artwork {
+    position: absolute;
+    color: white;
+    margin: 20px;
+    top: 0;
+    left: 0;
+  }
+  body main .frame-2 .artworks .slide-box {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  body main .frame-2 .artworks .slide-box .art-template {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  body main .frame-2 .artworks .slide-box .art-template .art {
+    width: 350px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  body main .frame-2 .artworks .slide-box .art-template .art .title {
+    position: absolute;
+    font-size: 70px;
+    margin: 0;
+    bottom: 0px;
+    left: 5px;
+    color: white;
+  }
+  body main .frame-2 .artworks .slide-box .art-template .art .pic {
+    width: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+    color: white;
+  }
+  body main .frame-2 .artworks .slide-box .details .font {
+    color: white;
+  }
+  body main .frame-2 .artworks .slide-box .details .artist {
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body main .frame-2 .artworks .slide-box .details .description {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 0;
+  }
+  body main .frame-3 {
+    height: 100vh;
+    background-color: black;
+    margin: 50px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */

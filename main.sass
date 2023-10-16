@@ -27,12 +27,18 @@ h1, h2, h3, h4, h5, h6
                     height: 50rem
                     object-fit: cover
             .frame-2
+                position: relative
                 .text-artwork
                     top: 0
+                    left: 0
                     position: absolute
+                    color: black
                     background-color: white
                     padding: 20px 20px
-                    margin: 50px 20px 0 20px
+                    margin: 20px 20px 0 0
+                    z-index: 2
+                    h1
+                        font-size: 30px
                 .artworks
                     position: relative
                     height: auto
@@ -42,7 +48,7 @@ h1, h2, h3, h4, h5, h6
                     justify-content: center
                     flex-direction: column
                     border-radius: 10px
-                    padding: 50px 0
+                    padding: 120px 0 0
                     .text-artwork
                         position: absolute
                         color: white
@@ -90,11 +96,11 @@ h1, h2, h3, h4, h5, h6
                                 
 
 
-            .frame-3
-                height: 100vh
-                background-color: black
-                margin: 50px 20px
-                display: flex
-                justify-content: center
-                flex-direction: column
-                border-radius: 10px
+                .frame-3
+                    height: 100vh
+                    background-color: black
+                    margin: 50px 20px
+                    display: flex
+                    justify-content: center
+                    flex-direction: column
+                    border-radius: 10px

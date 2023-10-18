@@ -38,16 +38,21 @@ h1, h2, h3, h4, h5, h6
                     background-color: white
                     padding: 10px 10px
                     margin: 25px 20px 0 0
-                .snaps-inline::-webkit-scrollbar
-                    display: none
                 .snaps-inline
+                .snaps-inline
+                    
+                .snaps-inline
+                    
                     scroll-snap-type: x mandatory
                     scroll-padding-inline: var(--_spacer, 1rem)
-                    
-                    overscroll-behavior-inline: contain
-                .snaps-inline 
+                    overscroll-behavior-inline: contain 
                     & > * 
-                        scroll-snap-align: center 
+                        scroll-snap-align: center
+                    &::-webkit-scrollbar
+                        display: none
+
+                 
+                    
                 .artworks
                     background-color: rgb(164, 247, 247)
                     display: grid
@@ -62,8 +67,7 @@ h1, h2, h3, h4, h5, h6
                     overscroll-behavior-inline: contain 
                     height: auto
                     background-color: black
-                    margin: 50px 20px
-                    scroll-snap-align: center
+                    margin: 50px 50px
                     
                     
                     overflow-x: auto
@@ -78,6 +82,7 @@ h1, h2, h3, h4, h5, h6
                         display: grid
                         grid-template-columns: 1fr 1fr
                         padding: 50px 20px
+                        margin: 0 250px
                         .art-template
                             width: auto
                             position: relative

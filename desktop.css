@@ -43,9 +43,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px 10px;
     margin: 25px 20px 0 0;
   }
-  body main .frame-2 .snaps-inline::-webkit-scrollbar {
-    display: none;
-  }
   body main .frame-2 .snaps-inline {
     scroll-snap-type: x mandatory;
     scroll-padding-inline: var(--_spacer, 1rem);
@@ -53,6 +50,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   body main .frame-2 .snaps-inline > * {
     scroll-snap-align: center;
+  }
+  body main .frame-2 .snaps-inline::-webkit-scrollbar {
+    display: none;
   }
   body main .frame-2 .artworks {
     background-color: rgb(164, 247, 247);
@@ -68,8 +68,7 @@ h1, h2, h3, h4, h5, h6 {
     overscroll-behavior-inline: contain;
     height: auto;
     background-color: black;
-    margin: 50px 20px;
-    scroll-snap-align: center;
+    margin: 50px 50px;
     overflow-x: auto;
   }
   body main .frame-2 .artworks .slide-box {
@@ -77,6 +76,7 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 50px 20px;
+    margin: 0 250px;
   }
   body main .frame-2 .artworks .slide-box .art-template {
     width: auto;
